@@ -180,7 +180,11 @@ body {
   color: #404bbf;
 }
 
-.menu-link::after {
+.current-page:visited {
+  color: #404bbf;
+}
+
+.current-page::after {
   content: "";
   position: absolute;
   left: 0;
