@@ -695,7 +695,7 @@ body {
   padding: 8px 0 8px 16px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border: 1px solid #fff;
