@@ -672,19 +672,22 @@ body {
   fill: #fff;
 }
 
-.contact-form-subscribe {
-  display: flex;
-  margin-left: 80px;
-}
-
 .contact-form-subscribe-desc {
   margin-bottom: 16px;
-  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+}
+
+.contact-form-subscribe {
+  display: flex;
+  margin-left: 80px;
+}
+
+.contact-form-subscribe-label {
+  margin-right: 24px;
 }
 
 .contact-form-subscribe-input {
@@ -693,12 +696,13 @@ body {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border: 1px solid #fff;
+  background-color: transparent;
   color: #fff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
-  background-color: #2e2f42;
 }
 
 .contact-form-subscribe-input::placeholder {
@@ -706,6 +710,7 @@ body {
 }
 
 .modal-subscribe-btn {
+  cursor: pointer;
   align-self: flex-end;
   display: flex;
   justify-content: center;
@@ -716,7 +721,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  min-width: 169px;
+  min-width: 165px;
   height: 40px;
   background-color: var(--buttons-background-color);
   border-radius: 4px;
@@ -870,6 +875,7 @@ body {
 .contact-form-privacy-policy-link:focus {
   color: #4d5ae5;
   text-decoration: underline;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form-send-btn {
