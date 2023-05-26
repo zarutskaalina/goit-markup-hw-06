@@ -481,6 +481,24 @@
             </li>
           </ul>
         </div>
+
+        <form class="contact-form-subscribe">
+          <label class="contact-form-subscribe-label">
+            <span class="contact-form-subscribe-desc">Subscribe</span>
+            <input
+              type="email"
+              class="contact-form-subscribe-input"
+              name="Email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="submit" class="modal-subscribe-btn">
+            Subscribe
+            <svg class="modal-subscribe-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe-btn"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
 
@@ -568,7 +586,7 @@
             ></textarea>
           </label>
 
-          <label class="contact-form-privacy-policy-wrapper">
+          <label class="contact-form-wrapper">
             <input
               type="checkbox"
               class="contact-form-checkbox"
@@ -581,9 +599,17 @@
                 href="./images/icons.svg#icon-checkbox-click"
               ></use>
             </svg>
-            I accept the terms and conditions of the Privacy Policy
-          </label>
 
+            <p>
+              I accept the terms and conditions of the
+              <a
+                class="contact-form-privacy-policy-link link"
+                href="https://policies.google.com/privacy?hl=en-US"
+              >
+                Privacy Policy
+              </a>
+            </p>
+          </label>
           <button type="submit" class="contact-form-send-btn">Send</button>
         </form>
       </div>

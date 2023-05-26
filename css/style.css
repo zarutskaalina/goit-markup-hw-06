@@ -1,7 +1,7 @@
 :root {
   --main-font-family: Roboto, sans-serif;
   --secondary-font-family: Raleway, sans-serif;
-  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-dark: #fff;
   --primary-headline-color-theme-light: #2e2f42;
   --primary-text-color-theme-light: #434455;
   --secondary-color: #f4f4fd;
@@ -47,7 +47,7 @@ img {
 
 body {
   font-family: var(--main-font-family);
-  background-color: #ffffff;
+  background-color: #fff;
   color: #434455;
 }
 
@@ -660,7 +660,7 @@ body {
 .modal-close-btn:focus {
   background: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .modal-close-btn-icon {
@@ -669,8 +669,73 @@ body {
 
 .modal-close-btn-icon:hover,
 .modal-close-btn-icon:focus {
-  fill: #ffffff;
+  fill: #fff;
 }
+
+.contact-form-subscribe {
+  display: flex;
+  margin-left: 80px;
+}
+
+.contact-form-subscribe-desc {
+  margin-bottom: 16px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.contact-form-subscribe-input {
+  padding: 8px 0 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background-color: #2e2f42;
+}
+
+.contact-form-subscribe-input::placeholder {
+  color: #fff;
+}
+
+.modal-subscribe-btn {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 40px;
+  background-color: var(--buttons-background-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--primary-text-color-theme-dark);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-subscribe-btn:hover,
+.modal-subscribe-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--list-buttons-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-subscribe-btn-icon {
+  margin-left: 16px;
+}
+
 /* ================= FORM ================= */
 .title-contact-form {
   padding-top: 72px;
@@ -755,7 +820,7 @@ body {
   border-color: var(--accent-color);
 }
 
-.contact-form-privacy-policy-wrapper {
+.contact-form-wrapper {
   display: flex;
   align-items: center;
   font-weight: 400;
@@ -795,6 +860,16 @@ body {
   + .contact-form-own-chekbox
   > .contact-form-chekmark-icon {
   opacity: 1;
+}
+
+.contact-form-privacy-policy-link {
+  color: #8e8f99;
+}
+
+.contact-form-privacy-policy-link:hover,
+.contact-form-privacy-policy-link:focus {
+  color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .contact-form-send-btn {
