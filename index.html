@@ -517,12 +517,11 @@
             Leave your contacts and we will call you back
           </p>
           <form class="contact-form">
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="user-name"> Name</label>
+            <label class="contact-form-label">
+              <span class="contact-form-desc">Name</span>
               <div class="contact-form-input-wrapper">
                 <input
                   type="text"
-                  id="user-name"
                   class="contact-form-input"
                   name="user_name"
                   required
@@ -537,14 +536,13 @@
                   ></use>
                 </svg>
               </div>
-            </div>
+            </label>
 
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="user-phone"> Phone </label>
+            <label class="contact-form-label">
+              <span class="contact-form-desc">Phone</span>
               <div class="contact-form-input-wrapper">
                 <input
                   type="tel"
-                  id="user-phone"
                   class="contact-form-input"
                   name="user_phone"
                   required
@@ -560,14 +558,13 @@
                   ></use>
                 </svg>
               </div>
-            </div>
+            </label>
 
-            <div class="contact-form-field">
-              <label class="contact-form-label" for="user-email"> Email</label>
+            <label class="contact-form-label">
+              <span class="contact-form-desc">Email</span>
               <div class="contact-form-input-wrapper">
                 <input
                   type="email"
-                  id="user-email"
                   class="contact-form-input"
                   name="user_email"
                   required
@@ -581,43 +578,41 @@
                   ></use>
                 </svg>
               </div>
-            </div>
+            </label>
 
-            <div class="contact-form-item">
-              <label class="contact-form-label" for="user-comment">
-                Comment</label
-              >
+            <label class="contact-form-label">
+              <span class="contact-form-desc">Comment</span>
               <textarea
                 name="user_comment"
-                id="user-comment"
                 class="contact-form-comment"
                 placeholder="Text input"
               ></textarea>
-            </div>
+            </label>
 
-            <div class="contact-form-checkbox-wrapper">
-              <input
-                type="checkbox"
-                class="contact-form-checkbox visually-hidden"
-                name="user_policy"
-                id="user-privacy"
-                required
-              />
-              <label class="contact-form-checkbox-desc" for="user-privacy"
-                >I accept the terms and conditions of the</label
-              >
-              <span class="contact-form-own-chekbox">
-                <svg class="contact-form-chekmark-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox-click"></use>
-                </svg>
-              </span>
-              <a
-                class="contact-form-privacy-policy-link link"
-                href="https://policies.google.com/privacy?hl=en-US"
-              >
-                Privacy Policy
-              </a>
-            </div>
+            <input
+              type="checkbox"
+              id="user-privacy"
+              class="contact-form-checkbox"
+              name="user_policy"
+              required
+            />
+            <svg class="contact-form-own-chekbox" width="16" height="16">
+              <use
+                class="contact-form-chekmark-icon"
+                href="./images/icons.svg#icon-checkbox-click"
+              ></use>
+            </svg>
+
+            <label class="contact-form-checkbox-desc" for="user-privacy">
+              I accept the terms and conditions of the</label
+            >
+            <a
+              class="contact-form-privacy-policy-link link"
+              href="https://policies.google.com/privacy?hl=en-US"
+            >
+              Privacy Policy
+            </a>
+
             <button type="submit" class="contact-form-send-btn">Send</button>
           </form>
         </div>
