@@ -504,6 +504,7 @@
       </div>
     </footer>
 
+    <!--MODAL WINDOW-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -517,11 +518,12 @@
             Leave your contacts and we will call you back
           </p>
           <form class="contact-form">
-            <label class="contact-form-label">
-              <span class="contact-form-desc">Name</span>
+            <div class="contact-form-field">
+              <label for="user-name" class="contact-form-label"> Name</label>
               <div class="contact-form-input-wrapper">
                 <input
                   type="text"
+                  id="user-name"
                   class="contact-form-input"
                   name="user_name"
                   required
@@ -536,13 +538,14 @@
                   ></use>
                 </svg>
               </div>
-            </label>
+            </div>
 
-            <label class="contact-form-label">
-              <span class="contact-form-desc">Phone</span>
+            <div class="contact-form-field">
+              <label for="user-phone" class="contact-form-label"> Phone</label>
               <div class="contact-form-input-wrapper">
                 <input
                   type="tel"
+                  id="user-phone"
                   class="contact-form-input"
                   name="user_phone"
                   required
@@ -558,13 +561,14 @@
                   ></use>
                 </svg>
               </div>
-            </label>
+            </div>
 
-            <label class="contact-form-label">
-              <span class="contact-form-desc">Email</span>
+            <div class="contact-form-field">
+              <label for="user-email" class="contact-form-label"> Email</label>
               <div class="contact-form-input-wrapper">
                 <input
                   type="email"
+                  id="user-email"
                   class="contact-form-input"
                   name="user_email"
                   required
@@ -578,7 +582,7 @@
                   ></use>
                 </svg>
               </div>
-            </label>
+            </div>
 
             <label class="contact-form-label">
               <span class="contact-form-desc">Comment</span>
