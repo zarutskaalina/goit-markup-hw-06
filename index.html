@@ -587,7 +587,7 @@
             ></textarea>
           </div>
 
-          <div>
+          <div class="contact-form-checkbox-wrapper">
             <input
               type="checkbox"
               id="user-privacy"
@@ -597,15 +597,13 @@
               value="true"
               required
             />
-            <svg class="contact-form-own-chekbox" width="16" height="16">
-              <use
-                class="contact-form-chekmark-icon"
-                href="./images/icons.svg#icon-checkbox-click"
-              ></use>
-            </svg>
-
-            <label class="contact-form-checkbox-desc" for="user-privacy">
+            <label for="user-privacy" class="contact-form-checkbox-desc">
               I accept the terms and conditions of the
+              <span class="contact-form-own-chekbox">
+                <svg class="contact-form-chekmark-icon">
+                  <use href="./images/icons.svg#icon-checkbox-click"></use>
+                </svg>
+              </span>
               <a
                 class="contact-form-privacy-policy-link link"
                 href="https://policies.google.com/privacy?hl=en-US"
