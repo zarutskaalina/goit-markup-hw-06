@@ -625,6 +625,7 @@ body {
 }
 
 .modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -742,11 +743,8 @@ body {
 }
 
 /* ================= FORM ================= */
-.modal-contact-form-wrapper {
-  padding: 72px 24px 24px 24px;
-}
 
-.modal-contact-form-wrapper-desc {
+.modal-desc {
   margin-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
@@ -805,6 +803,10 @@ body {
 
 .contact-form-input:focus + .contact-form-input-icon {
   fill: #4d5ae5;
+}
+
+.contact-form-message {
+  margin-bottom: 16px;
 }
 
 .contact-form-comment {
