@@ -839,15 +839,9 @@ body {
   margin-bottom: 24px;
 }
 
-.contact-form-checkbox {
-  appearance: none;
-  position: absolute;
-}
-
 .contact-form-checkbox-desc {
   display: flex;
   align-items: center;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -855,26 +849,21 @@ body {
 }
 
 .contact-form-own-chekbox {
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
-  border: 1px solid;
   cursor: pointer;
+  margin-right: 5px;
 }
 
-.contact-form-checkbox:focus + .contact-form-own-chekbox {
-  outline: 1px solid rgba(0, 0, 255, 0.5);
-}
-
-.contact-form-checkbox:checked + .contact-form-own-chekbox {
-  background-color: #404bbf;
-  border: none;
-  fill: #fff;
-  border-color: #404bbf;
+.contact-form-checkbox {
+  appearance: none;
+  position: absolute;
 }
 
 .contact-form-chekmark-icon {
@@ -882,9 +871,25 @@ body {
 }
 
 .contact-form-checkbox:checked
-  + .contact-form-own-chekbox
+  + .contact-form-checkbox-desc
+  > .contact-form-own-chekbox
   > .contact-form-chekmark-icon {
   opacity: 1;
+}
+
+.contact-form-checkbox:checked
+  + .contact-form-checkbox-desc
+  > .contact-form-own-chekbox {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+  border-color: #404bbf;
+}
+
+.contact-form-checkbox:focus
+  + .contact-form-checkbox-desc
+  > .contact-form-own-chekbox {
+  outline: 1px solid rgba(0, 0, 255, 0.5);
 }
 
 .contact-form-privacy-policy-link {
