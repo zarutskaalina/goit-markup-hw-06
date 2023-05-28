@@ -862,7 +862,7 @@ body {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  border: 1px solid #2e2f42;
+  border: 1px solid;
   cursor: pointer;
 }
 
@@ -871,8 +871,10 @@ body {
 }
 
 .contact-form-checkbox:checked + .contact-form-own-chekbox {
-  border: #404bbf;
-  background: #404bbf;
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+  border-color: #404bbf;
 }
 
 .contact-form-chekmark-icon {
